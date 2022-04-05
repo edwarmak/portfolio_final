@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 //
 import React, {Component} from 'react'
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
+// Began app as a router based navigation, decided to switch to single page
+// import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
+import {animateScroll as scroll} from 'react-scroll'
 import Bio from './components/bio.js'
 import Resume from './components/resume.js'
 import Projects from './components/projects.js'
@@ -10,22 +12,40 @@ import Resources from './components/resources.js'
 
 const App = () => {
   return (
-    <main>
+    <main className="App">
       <div>
         <Link to='/'>Bio</Link>
         <Link to='/resume'>Resume</Link>
         <Link to='/projects'>Projects</Link>
         <Link to='/resources'>Resources</Link>
       </div>
-        <Routes>
-          <Route path='/' component={Bio} exact />
-          <Route path='/resume' component={Resume} exact />
-          <Route path='/projects' component={Projects} exact />
-          <Route path='/exact' component={Resources} exact />
-          <Route component={Error} />
-        </Routes>
+
+      <div id="Bio">
+        <h1>Bio</h1>
+      </div>
+
+      <div id="Resume">
+        <h1>Resume</h1>
+      </div>
+
+      <div id="Projects">
+        <h1>Projects</h1>
+      </div>
+
+      <div id="Resources">
+        <h1>Resources</h1>
+      </div>
+
     </main>
   )
 }
 
 export default App;
+
+// <Routes>
+//     <Route path='/' element={<Bio />} exact />
+//     <Route path='/resume' element={<Resume />} exact />
+//     <Route path='/projects' element={<Projects />} exact />
+//     <Route path='/resources' element={<Resources />} exact />
+//     <Route element={Error} />
+// </Routes>
