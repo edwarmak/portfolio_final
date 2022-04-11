@@ -17,7 +17,7 @@ const App = () => {
 
       <Header />
 
-      <div id="Bio">
+      <div id="Bio" className="container-sm">
         <h1>Bio</h1>
         <div className="bio-box container-sm">
           <div className="bio-image col">
@@ -29,7 +29,7 @@ const App = () => {
         </div>
       </div>
 
-      <div id="Resume">
+      <div id="Resume" className="container-sm">
         <h1>Resume</h1>
           <div>
             <a href={require("./my_resume.pdf")} download="Makayla_Edwards_Resume">Download My Resume</a>
@@ -53,11 +53,11 @@ const App = () => {
             </div>
       </div>
 
-      <div id="Projects">
+      <div id="Projects" className="container-sm">
         <h1>Projects</h1>
       </div>
 
-      <div id="Resources">
+      <div id="Resources" className="container-sm">
         <h1>Resources</h1>
       </div>
 
