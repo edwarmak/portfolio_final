@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './header'
-import headshot from './headshot.JPG'
+import headshot from './headshot.jpg'
 import todo from './todo.png'
 import mystuffapp from './mystuffapp.png'
 import React, {Component} from 'react'
@@ -20,7 +20,7 @@ const App = () => {
       <Header />
 
       <div id="Bio" className="container-sm">
-        <div className="bio-box container-sm row align-items-center">
+        <div className="bio-box container-sm">
           <div className="bio-image col">
             <img src={headshot} className="headshot"></img>
           </div>
@@ -32,21 +32,21 @@ const App = () => {
 
       <div id="Resume" className="container-sm">
         <div className="icons container-lg">
-          <AiFillHtml5 className="icon" />
-          <DiCss3 className="icon" />
-          <SiJavascript className="icon" />
-          <SiJquery className="icon" />
-          <SiReact className="icon" />
-          <SiRedux className="icon" />
-          <SiPython className="icon" />
-          <SiDjango className="icon" />
-          <SiExpress className="icon" />
-          <SiMongodb className="icon" />
-          <SiPostgresql className="icon" />
-          <SiNodedotjs className="icon" />
-          <SiGit className="icon" />
-          <SiGithub className="icon" />
-          <SiBootstrap className="icon" />
+          <AiFillHtml5 className="icon" title="HTML5"/>
+          <DiCss3 className="icon" title="CSS3"/>
+          <SiJavascript className="icon" title="JavaScript"/>
+          <SiJquery className="icon" title="jQuery"/>
+          <SiReact className="icon" title="React"/>
+          <SiRedux className="icon" title="Redux"/>
+          <SiPython className="icon" title="Python"/>
+          <SiDjango className="icon" title="Django"/>
+          <SiExpress className="icon" title="Express.js"/>
+          <SiMongodb className="icon" title="MongoDB"/>
+          <SiPostgresql className="icon" title="Postgresql"/>
+          <SiNodedotjs className="icon" title="Node.js"/>
+          <SiGit className="icon" title="Git"/>
+          <SiGithub className="icon" title="Github"/>
+          <SiBootstrap className="icon" title="Bootstrap"/>
         </div>
           <div>
             <a href={require("./my_resume.pdf")} download="Makayla_Edwards_Resume">Download My Resume Here</a>

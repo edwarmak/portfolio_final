@@ -1,33 +1,54 @@
+* {
+  background-color: black;
+}
 
-/* .App {
+.App {
   text-align: center;
-} */
+  background-color: black;
+  color: white;
+}
 
-.App > div {
+/* .App > div {
   width: 100vw;
   min-height: 85vh;
   margin-top: 85px;
-  border: 2px solid black;
+  border: 2px solid white;
+} */
+#Bio {
+  width: 100vw;
+  min-height: 65vh;
+  margin-top: 80px;
+  border: 2px solid white;
+}
+
+#Resume {
+  width: 100vw;
+  min-height: 35vh;
+  margin-top: 80px;
+  border: 2px solid white;
+}
+
+#Projects {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 80px;
+  border: 2px solid white;
+}
+
+#Resources {
+  width: 100vw;
+  min-height: 45vh;
+  margin-top: 85px;
+  border: 2px solid white;
 }
 
 /*  BIO  */
 
-/* .bio-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 4em 4em 0em 2em;
-  background-color: grey;
-} */
-
-/* .bio-text {
-  margin: 0em 2em;
-} */
-
 .headshot {
-  width: 10em;
-  height: 10em;
+  width: 30%;
+  height: 30%;
+  max-width: 300px;
+  max-height: 300px;
   margin: 2em 0em;
 }
 
@@ -39,7 +60,7 @@
 .icon {
   height: 5vh;
   width: 5vw;
-  color: blue;
+  color: red;
   margin: 1em 1em;
 }
 
@@ -48,5 +69,6 @@
 @media screen and (max-width: 600px) {
   div.bio-box {
     flex-direction: column;
+    text-align: center;
   }
 }
