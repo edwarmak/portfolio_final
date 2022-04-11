@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  border: 2px solid black;
+  top: 0;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
