@@ -26,6 +26,7 @@ const App = () => {
           </div>
           <div className="bio-text col">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
@@ -60,12 +61,6 @@ const App = () => {
               <img src={todo} className="project-img"></img>
               <a className="col-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
               <a className="col-4" href="https://github.com/edwarmak/backend_todo">View backend code!</a>
-          </div>
-          <div className="container-sm row justify-content-evenly">
-            <h4 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h4>
-              <img src={mystuffapp} className="project-img"></img>
-              <a className="col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
-              <a className="col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
           </div>
           <div className="container-sm row justify-content-evenly">
             <h4 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h4>
