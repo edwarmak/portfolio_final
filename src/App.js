@@ -67,12 +67,6 @@ const App = () => {
               <a className="col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
               <a className="col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
           </div>
-          <div className="container-sm row justify-content-evenly">
-            <h4 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h4>
-              <img src={mystuffapp} className="project-img"></img>
-              <a className="col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
-              <a className="col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
-          </div>
       </div>
 
       <div id="Resources" className="container-sm">
