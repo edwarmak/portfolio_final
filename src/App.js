@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './header'
-import headshot from './headshot.jpg'
+import headshot from './headshot.JPG'
 import todo from './todo.png'
 import mystuffapp from './mystuffapp.png'
 import React, {Component} from 'react'
