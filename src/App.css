@@ -5,8 +5,8 @@
 
 .App > div {
   width: 100vw;
-  min-height: 100vh;
-  margin-top: 100px;
+  min-height: 85vh;
+  margin-top: 85px;
   border: 2px solid black;
 }
 
@@ -29,6 +29,11 @@
   width: 10em;
   height: 10em;
   margin: 2em 0em;
+}
+
+.project-img {
+  width: 70%;
+  height: 70%;
 }
 
 .icon {

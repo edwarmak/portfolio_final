@@ -1,6 +1,8 @@
 import './App.css'
 import Header from './header'
 import headshot from './headshot.JPG'
+import todo from './todo.png'
+import mystuffapp from './mystuffapp.png'
 import React, {Component} from 'react'
 import {saveAs} from "file-saver"
 // Began app as a router based navigation, decided to switch to single page
@@ -18,8 +20,7 @@ const App = () => {
       <Header />
 
       <div id="Bio" className="container-sm">
-        <h1>Bio</h1>
-        <div className="bio-box container-sm">
+        <div className="bio-box container-sm row align-items-center">
           <div className="bio-image col">
             <img src={headshot} className="headshot"></img>
           </div>
@@ -30,31 +31,42 @@ const App = () => {
       </div>
 
       <div id="Resume" className="container-sm">
-        <h1>Resume</h1>
+        <div className="icons container-lg">
+          <AiFillHtml5 className="icon" />
+          <DiCss3 className="icon" />
+          <SiJavascript className="icon" />
+          <SiJquery className="icon" />
+          <SiReact className="icon" />
+          <SiRedux className="icon" />
+          <SiPython className="icon" />
+          <SiDjango className="icon" />
+          <SiExpress className="icon" />
+          <SiMongodb className="icon" />
+          <SiPostgresql className="icon" />
+          <SiNodedotjs className="icon" />
+          <SiGit className="icon" />
+          <SiGithub className="icon" />
+          <SiBootstrap className="icon" />
+        </div>
           <div>
-            <a href={require("./my_resume.pdf")} download="Makayla_Edwards_Resume">Download My Resume</a>
+            <a href={require("./my_resume.pdf")} download="Makayla_Edwards_Resume">Download My Resume Here</a>
           </div>
-            <div className="icons container-lg">
-              <AiFillHtml5 className="icon" />
-              <DiCss3 className="icon" />
-              <SiJavascript className="icon" />
-              <SiJquery className="icon" />
-              <SiReact className="icon" />
-              <SiRedux className="icon" />
-              <SiPython className="icon" />
-              <SiDjango className="icon" />
-              <SiExpress className="icon" />
-              <SiMongodb className="icon" />
-              <SiPostgresql className="icon" />
-              <SiNodedotjs className="icon" />
-              <SiGit className="icon" />
-              <SiGithub className="icon" />
-              <SiBootstrap className="icon" />
-            </div>
       </div>
 
       <div id="Projects" className="container-sm">
         <h1>Projects</h1>
+          <div className="container-sm row justify-content-evenly">
+            <h4 className="col-4"><a href="https://voluble-begonia-4ac205.netlify.app/">Todo or not Todo</a></h4>
+              <img src={todo} className="project-img"></img>
+              <a className="col-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
+              <a className="col-4" href="https://github.com/edwarmak/backend_todo">View backend code!</a>
+          </div>
+          <div className="container-sm row justify-content-evenly">
+            <h4 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h4>
+              <img src={mystuffapp} className="project-img"></img>
+              <a className="col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
+              <a className="col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
+          </div>
       </div>
 
       <div id="Resources" className="container-sm">
