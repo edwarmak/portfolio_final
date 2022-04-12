@@ -10,7 +10,7 @@ import {saveAs} from "file-saver"
 import {animateScroll as scroll} from 'react-scroll'
 import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
-import {SiJavascript, SiReact, SiRedux, SiPython, SiDjango, SiJquery, SiExpress, SiMongodb, SiNodedotjs, SiGit, SiPostgresql, SiGithub, SiBootstrap} from 'react-icons/si'
+import {SiJavascript, SiReact, SiRedux, SiPython, SiDjango, SiJquery, SiExpress, SiMongodb, SiNodedotjs, SiGit, SiPostgresql, SiGithub, SiBootstrap, SiLinkedin} from 'react-icons/si'
 
 const App = () => {
 
@@ -54,24 +54,33 @@ const App = () => {
           </div>
       </div>
 
-      <div id="Projects" className="container-sm">
-        <h1>Projects</h1>
-          <div className="container-sm row justify-content-evenly">
-            <h4 className="col-4"><a href="https://voluble-begonia-4ac205.netlify.app/">Todo or not Todo</a></h4>
-              <img src={todo} className="project-img"></img>
-              <a className="col-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
-              <a className="col-4" href="https://github.com/edwarmak/backend_todo">View backend code!</a>
-          </div>
-          <div className="container-sm row justify-content-evenly">
-            <h4 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h4>
-              <img src={mystuffapp} className="project-img"></img>
-              <a className="col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
-              <a className="col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
-          </div>
+      <div id="carouselSlides" className="carousel slide" data-ride="carousel">
+        <div id="Projects" className=" carousel-inner container-sm">
+            <div className="carousel-item active container-sm row justify-content-evenly">
+              <h4 className="col-4"><a href="https://voluble-begonia-4ac205.netlify.app/">Todo or not Todo</a></h4>
+                <img src={todo} className="d-block w-100 project-img"></img>
+                <a className="col-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
+                <a className="col-4" href="https://github.com/edwarmak/backend_todo">View backend code!</a>
+            </div>
+            <div className="carousel-item container-sm row justify-content-evenly">
+              <h4 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h4>
+                <img src={mystuffapp} className="d-block w-100 project-img"></img>
+                <a className="col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
+                <a className="col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
+            </div>
+        </div>
+        <a className="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
       </div>
 
       <div id="Resources" className="container-sm">
-        <h1>Resources</h1>
+        <a href="https://www.linkedin.com/in/makaylaedwards22/"><SiLinkedin className="icon" title="LinkedIn"/></a>
       </div>
 
     </main>
