@@ -1,73 +1,143 @@
-* {
-  background-color: black;
-}
-
 .App {
   text-align: center;
   /* background-color: black; */
-  color: white;
+  /* color: white; */
 }
 
-/* .App > div {
-  width: 100vw;
-  min-height: 85vh;
-  margin-top: 85px;
-  border: 2px solid white;
-} */
 #Bio {
   width: 100vw;
   min-height: 65vh;
   margin-top: 80px;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 #Resume {
   width: 100vw;
   min-height: 35vh;
   margin-top: 80px;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 #Projects {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 50vh;
   margin-top: 80px;
-  border: 2px solid white;
+  border: 2px solid black;
+}
+
+.carousel-item {
+  margin-left: auto;
 }
 
 #Resources {
   width: 100vw;
   min-height: 45vh;
   margin-top: 85px;
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 /*  BIO  */
 
-.headshot {
+/* .headshot {
   width: 30%;
   height: 30%;
   max-width: 300px;
   max-height: 300px;
   margin: 2em 0em;
-}
-
-.project-img {
-  width: 70%;
-  height: 70%;
-}
+} */
 
 .icon {
-  height: 5vh;
-  width: 5vw;
+  height: 5em;
+  width: 5em;
   color: red;
-  margin: 1em 1em;
 }
+.contact {
+  margin: 0em 1em;
+  height: 3em;
+  width: 3em;
+  color: red;
+}
+
+/*///////////////////////*/
+/*     THESE CAN STAY    */
+/* ///////////////////// */
+
 /* MEDIA QUERIES */
 /* bio & image switch when mobile */
-@media screen and (max-width: 600px) {
-  div.bio-box {
-    flex-direction: column;
-    text-align: center;
+
+  /* Small devices (landscape phones, 544px and up) */
+  @media (max-width: 543px) {
+    .icon {
+      height: 3.5em;
+      width: 3.5em;
+    }
+    .contact {
+      height: 2em;
+      width: 2em;
+    }
+    .footer-text {
+      font-size: 12px;
+    }
+    .footer-bootstrap {
+      font-size: 10px;
+    }
   }
-}
+
+  @media (min-width: 544px) {
+    .icon {
+      height: 4em;
+      width: 4em;
+    }
+    .contact {
+      height: 2em;
+      width: 2em;
+    }
+    .footer-text {
+      font-size: 14px;
+    }
+    .footer-bootstrap {
+      font-size: 12px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .icon {
+      height: 4.5em;
+      width: 4.5em;
+    }
+    .footer-text {
+      font-size: 16px;
+    }
+    .footer-bootstrap {
+      font-size: 14px;
+    }
+    .headshot {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .icon {
+      height: 5em;
+      width: 5em;
+    }
+    .footer-text {
+      font-size: 18px;
+    }
+    .footer-bootstrap {
+      font-size: 16px;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .footer-text {
+      font-size: 20px;
+    }
+    .footer-bootstrap {
+      font-size: 18px;
+    }
+  }
