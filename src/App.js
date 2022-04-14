@@ -11,7 +11,7 @@ import {saveAs} from "file-saver"
 import {animateScroll as scroll} from 'react-scroll'
 import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
-import {SiJavascript, SiReact, SiRedux, SiPython, SiDjango, SiJquery, SiExpress, SiMongodb, SiNodedotjs, SiGit, SiPostgresql, SiGithub, SiBootstrap, SiLinkedin} from 'react-icons/si'
+import {SiJavascript, SiReact, SiRedux, SiPython, SiDjango, SiJquery, SiExpress, SiMongodb, SiNodedotjs, SiGit, SiPostgresql, SiGithub, SiBootstrap, SiLinkedin, SiDiscord, SiSlack} from 'react-icons/si'
 
 const App = () => {
 
@@ -25,22 +25,20 @@ const App = () => {
           <div className="container-sm pt-5">
             <h1 className="bio-title text-white">Makayla Edwards</h1>
             <h6 className="bio-title-2 text-white-50 ">Full Stack Software Engineer</h6>
-            </div>
-            <div className="bio-image col">
-              <img src={headshot} className="headshot rounded-circle w-50 p-3 mh-100 my-2"></img>
-            </div>
-            <div className="bio-text container-sm border px-3">
-
-                <p className="text-white ">Hi, I'm Makayla! I am a software engineer, musician, and car enthusiast. Before graduating General Assembly's Software Engineering Immersive course, I worked as a ski lift operator and car mechanic. Both jobs were demanding of my focus and eye for detail. My love for solving technical problems has brought me to you!</p>
-
-              <p className="text-white">As a classical musician I am passionate about working as a team. After playing cello in a chamber orchestra, I learned that each musician has their own role. In order to be successful, you must demonstrate trust and listen to those around you. This way you can adjust your dynamics to ensure that all instruments blend as one.</p>
-              <p className="text-white">Excited to connect with you!</p>
-            </div>
+          </div>
+          <div className="bio-image col">
+            <img src={headshot} className="headshot rounded-circle w-50 p-3 mh-100 my-2"></img>
+          </div>
+          <div className="bio-text container-sm">
+            <p className="text-white ">Hi, I'm Makayla! I am a software engineer, musician, and car enthusiast. Before graduating General Assembly's Software Engineering Immersive course, I worked as a ski lift operator and car mechanic. Both jobs were demanding of my focus and eye for detail. My love for solving technical problems has brought me to you!</p>              <p className="text-white">As a classical musician I am passionate about working as a team. After playing cello in a chamber orchestra, I learned that each musician has their own role. In order to be successful, you must demonstrate trust and listen to those around you. This way you can adjust your dynamics to ensure that all instruments blend as one.</p>
+            <p className="text-white">Excited to connect with you!</p>
+          </div>
         </div>
       </div>
 
       <div id="Resume" className="container-sm">
-          <div className="icon-row container-sm row justify-content-center">
+        <div className="icon-box container-sm mb-5">
+          <div className="icon-row container-sm mx-0 mb-5 px-0 row justify-content-center">
             <AiFillHtml5 className="icon" title="HTML5"/>
             <DiCss3 className="icon" title="CSS3"/>
             <SiJavascript className="icon" title="JavaScript"/>
@@ -57,26 +55,43 @@ const App = () => {
             <SiGithub className="icon" title="Github"/>
             <SiBootstrap className="icon" title="Bootstrap"/>
           </div>
-          <div>
-            <a href={require("./my_resume.pdf")} download="Makayla_Edwards_Resume">Download My Resume Here</a>
+          <div className="container-sm my-5">
+            <p className="text-white">Experienced in: HTML, CSS, JavaScript, jQuery, React, Redux-Toolkit, Python, Django, ExpressJS, MongoDB, Mongoose, NodeJS, Git, Github, Bootstrap, PostgresSQL, NoSQL</p>
           </div>
+          <div className="link-div container-sm">
+            <a href={require("./my_resume.pdf")} className="link fs-2 text-white" download="Makayla_Edwards_Resume">Download My Resume Here</a>
+          </div>
+        </div>
       </div>
 
-      <div id="carouselSlides" className="carousel slide" data-ride="carousel">
+      <div id="carouselSlides" className="carousel slide container-sm" data-ride="carousel">
         <div id="Projects" className="carousel-inner container-sm">
+
             <div className="carousel-item active container-sm row justify-content-evenly">
-              <h2 className="col-4"><a href="https://voluble-begonia-4ac205.netlify.app/">Todo or not Todo</a></h2>
-                <img src={todo} className="d-block w-100 project-img"></img>
-                <a className="link col-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
-                <a className="link col-4" href="https://github.com/edwarmak/backend_todo">View backend code!</a>
+              <h2 className="mt-3 mb-5"><a href="https://voluble-begonia-4ac205.netlify.app/" className="fs-2 text-white">Todo or not Todo</a></h2>
+              <img src={todo} className="d-block w-100 project-img"></img>
+                <div className="code-link mt-5 container-sm">
+                  <a className="text-white fs-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
+                </div>
+                <div className="code-link mt-2 container-sm">
+                  <a className="text-white fs-4 " href="https://github.com/edwarmak/backend_todo">View backend code!</a>
+                </div>
             </div>
+
             <div className="carousel-item container-sm row justify-content-evenly">
-              <h2 className="col-4"><a href="https://mystuff-security-app.netlify.app/">MyStuffApp</a></h2>
-                <img src={mystuffapp} className="d-block w-100 mystuff-img"></img>
-                <a className="link col-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
-                <a className="link col-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
+              <h2 className="mt-3 mb-5"><a href="https://mystuff-security-app.netlify.app/" className="fs-2 text-white">MyStuffApp</a></h2>
+              <img src={mystuffapp} className="d-block w-100 mystuff-img"></img>
+
+              <div className="code-link mt-5 container-sm">
+                <a className="text-white fs-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
+              </div>
+              <div className="code-link mt-2 container-sm">
+                <a className="text-white fs-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
+              </div>
             </div>
+
         </div>
+
         <a className="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="sr-only">Previous</span>
@@ -85,17 +100,25 @@ const App = () => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="sr-only">Next</span>
         </a>
+
       </div>
 
-      <div id="Resources" className="icon-row container-sm">
-        <div className="container-sm">
-          <h2>I Would Love To Hear From You!</h2>
-          <p>Please feel free to reach out to me</p>
-        </div>
-        <div className="container-fluid">
-          <a className="col" href="https://www.linkedin.com/in/makaylaedwards22/"><SiLinkedin className="contact" title="LinkedIn"/></a>
-          <a href="mailto:lilmack.edwards@gmail.com?subject=Portfolio_Reachout">Send an Email</a>
-          <a className="col" href="https://github.com/edwarmak"><SiGithub className="contact" title="Github"/></a>
+      <div id="Resources" className="container-sm d-inline-flex">
+        <div className="container-sm col d-flex flex-column justify-content-center ">
+          <div className="container-sm mt-5 ">
+            <h2 className="text-white fs-1 ">I Would Love To Hear From You!</h2>
+            <p className="text-white f-5 pt-3">Need help on a project? Interested in working with me? Want to talk about music?</p>
+            <p className="text-white">Please feel free to reach out to me!</p>
+          </div>
+          <div className="container-sm mt-5 ">
+            <a className="col p-2" href="https://www.linkedin.com/in/makaylaedwards22/"><SiLinkedin className="contact my-1" title="LinkedIn"/></a>
+            <a className="col p-2" href="https://github.com/edwarmak"><SiGithub className="contact my-1" title="Github"/></a>
+            <a className="col p-2" href="https://app.slack.com/client/T0351JZQ0/C02SNGHV0DC/user_profile/U02RXAW2DMJ"><SiSlack className="contact my-3" title="Slack"/></a>
+            <a className="col p-2" href="https://discordapp.com/users/mackie#9618"><SiDiscord className="contact my-3" title="Discord"/></a>
+          </div>
+          <div className="container-sm mt-5 ">
+            <a className="link fs-2 text-white" href="mailto:lilmack.edwards@gmail.com?subject=Portfolio_Reachout">Send an Email</a>
+          </div>
         </div>
       </div>
 

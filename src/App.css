@@ -1,14 +1,25 @@
  * {
    font-family: 'Electrolize', sans-serif
  }
-
+/*//////////////*/
+/* text shadows */
+/*//////////////*/
 .bio-title {
-  text-shadow: 0 0 20px #B026FF, 0 0 40px #B026FF, 0 0 55px #B026FF, 2px 2px 2px rgba(176,38,255,0);
+  text-shadow: 0 0 20px #B026FF, 0 0 40px #B026FF, 0 0 55px #B026FF, 0 0 65px #B026FF, 2px 2px 2px rgba(176,38,255,0);
+}
+.link:hover {
+  text-shadow: 0 0 20px #FFFF00, 0 0 40px #FFFF00, 2px 2px 2px rgba(176,38,255,0);
+}
+.link {
+  text-shadow: 0 0 20px white, 0 0 40px #B026FF, 0 0 55px #B026FF,0 0 65px #B026FF, 2px 2px 2px rgba(176,38,255,0);
 }
 
+/*/////////////*/
+/* page sizing */
+/*/////////////*/
 #Bio {
   width: 100vw;
-  min-height: 65vh;
+  min-height: 80vh;
   margin-top: 80px;
   border: 2px solid black;
 }
@@ -16,7 +27,7 @@
 #Resume {
   width: 100vw;
   min-height: 55vh;
-  margin-top: 80px;
+  margin-top: 150px;
   border: 2px solid black;
 }
 
@@ -38,9 +49,12 @@
   margin-bottom: 200px;
   border: 2px solid black;
 }
-
-/*  BIO  */
-
+.footer {
+  box-shadow: 0 0 20px white, 0 0 40px #B026FF, 0 0 42px #B026FF,0 0 44px #B026FF, 2px 2px 2px rgba(176,38,255,0);
+}
+/*/////////*/
+/*  icons  */
+/*/////////*/
 .icon {
   height: 5em;
   width: 5em;
@@ -54,17 +68,14 @@
 }
 
 /*///////////////////////*/
-/*     THESE CAN STAY    */
+/*     MEDIA QUERIES    */
 /* ///////////////////// */
-
-/* MEDIA QUERIES */
-/* bio & image switch when mobile */
 
   /* Small devices (landscape phones, 544px and up) */
   @media (max-width: 543px) {
     .icon {
-      height: 3.5em;
-      width: 3.5em;
+      height: 4em;
+      width: 4em;
     }
     .contact {
       height: 3.5em;
@@ -77,11 +88,10 @@
       font-size: 10px;
     }
   }
-
   @media (min-width: 544px) {
     .icon {
-      height: 4em;
-      width: 4em;
+      height: 4.25em;
+      width: 4.25em;
     }
     .contact {
       height: 4em;
@@ -94,7 +104,6 @@
       font-size: 12px;
     }
   }
-
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
     .icon {
@@ -115,8 +124,10 @@
       max-height: 300px;
       max-width: 700px;
     }
+    .icon-box {
+      max-width: 700px;
+    }
   }
-
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
     .icon {
@@ -130,7 +141,6 @@
       font-size: 16px;
     }
   }
-
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
     .footer-text {
