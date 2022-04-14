@@ -1,7 +1,9 @@
-.App {
-  text-align: center;
-  /* background-color: black; */
-  /* color: white; */
+ * {
+   font-family: 'Electrolize', sans-serif
+ }
+
+.bio-title {
+  text-shadow: 0 0 20px #B026FF, 0 0 40px #B026FF, 0 0 55px #B026FF, 2px 2px 2px rgba(176,38,255,0);
 }
 
 #Bio {
@@ -13,14 +15,14 @@
 
 #Resume {
   width: 100vw;
-  min-height: 35vh;
+  min-height: 55vh;
   margin-top: 80px;
   border: 2px solid black;
 }
 
 #Projects {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 55vh;
   margin-top: 80px;
   border: 2px solid black;
 }
@@ -31,31 +33,24 @@
 
 #Resources {
   width: 100vw;
-  min-height: 45vh;
+  min-height: 55vh;
   margin-top: 85px;
+  margin-bottom: 200px;
   border: 2px solid black;
 }
 
 /*  BIO  */
 
-/* .headshot {
-  width: 30%;
-  height: 30%;
-  max-width: 300px;
-  max-height: 300px;
-  margin: 2em 0em;
-} */
-
 .icon {
   height: 5em;
   width: 5em;
-  color: red;
+  color: #B026FF;
 }
 .contact {
   margin: 0em 1em;
-  height: 3em;
-  width: 3em;
-  color: red;
+  height: 5em;
+  width: 5em;
+  color: #B026FF;
 }
 
 /*///////////////////////*/
@@ -72,8 +67,8 @@
       width: 3.5em;
     }
     .contact {
-      height: 2em;
-      width: 2em;
+      height: 3.5em;
+      width: 3.5em;
     }
     .footer-text {
       font-size: 12px;
@@ -89,8 +84,8 @@
       width: 4em;
     }
     .contact {
-      height: 2em;
-      width: 2em;
+      height: 4em;
+      width: 4em;
     }
     .footer-text {
       font-size: 14px;
@@ -113,8 +108,12 @@
       font-size: 14px;
     }
     .headshot {
-      max-width: 300px;
+      max-width: 250px;
+      max-height: 250px;
+    }
+    .bio-text {
       max-height: 300px;
+      max-width: 700px;
     }
   }
 

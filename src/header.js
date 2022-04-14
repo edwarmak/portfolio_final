@@ -4,11 +4,11 @@ import './header.css'
 const Header = () => {
   return (
     <nav className="">
-      <ul className="header">
+      <ul className="header bg-black text-white">
 
         <li>
           <Link
-            activeClass="active"
+            activeClass="active text-decoration-none text-white fw-bolder fst-italic"
             to="Bio"
             spy={true}
             smooth={true}
@@ -20,7 +20,7 @@ const Header = () => {
 
         <li>
           <Link
-            activeClass="active"
+            activeClass="active text-decoration-none text-white fw-bolder fst-italic"
             to="Resume"
             spy={true}
             smooth={true}
@@ -32,7 +32,7 @@ const Header = () => {
 
         <li>
           <Link
-            activeClass="active"
+            activeClass="active text-decoration-none text-white fw-bolder fst-italic"
             to="Projects"
             spy={true}
             smooth={true}
@@ -44,13 +44,13 @@ const Header = () => {
 
         <li>
           <Link
-            activeClass="active"
+            activeClass="active text-decoration-none text-white fw-bolder fst-italic"
             to="Resources"
             spy={true}
             smooth={true}
             offset={-100}
             duration={500}>
-              Resources
+              Reach Out!
           </Link>
         </li>
 
