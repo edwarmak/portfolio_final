@@ -97,18 +97,18 @@
 /* mobile view layout fix */
 @media (max-width: 414px) {
   .container-sm {
-    padding-right: 0;
+    /* padding-right: 0; */
     /* padding-left: 10px; */
   }
   .carousel-inner {
-    padding-right: 1.5em;
+    /* padding-right: 1.5em; */
   }
   .nav-footer {
-    margin-left: 2em;
+    /* margin-left: 2em; */
   }
   .footer {
-    padding: 0em 1em;
-    font-size: 12px;
+    /* padding: 0em 1em;
+    font-size: 12px; */
   }
 }
   /* carousel arrows for mobile view */
