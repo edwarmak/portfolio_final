@@ -19,7 +19,9 @@ const App = () => {
   return (
     <main className="App text-center bg-black">
 
-      <Header />
+      <div>
+        <Header />
+      </div>
 
       <div id="Bio" className="container-sm">
         <div className="bio-box container-sm py-2">
@@ -73,7 +75,7 @@ const App = () => {
 
 
 
-      <div id="Projects" className="projects my-5 container-sm  d-inline-flex">
+      <div id="Projects" className="projects my-5  d-inline-flex">
 
         <div id="carouselSlides" className="carousel slide my-5 container-sm " data-ride="carousel">
           <div className="carousel-inner">
@@ -144,7 +146,8 @@ const App = () => {
             <a className="link fs-2 text-white" href="mailto:lilmack.edwards@gmail.com?subject=Portfolio_Reachout">Send an Email</a>
           </div>
         </div>
-      </div>
+
+    </div>
 
       <div>
         <Footer />
