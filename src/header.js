@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll'
 import './header.css'
+import './App.css'
 
 const Header = () => {
   return (

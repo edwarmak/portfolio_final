@@ -17,6 +17,9 @@
 /*/////////////*/
 /* page sizing */
 /*/////////////*/
+.header {
+  z-index: 3;
+}
 #Bio {
   width: 100vw;
   min-height: 80vh;
