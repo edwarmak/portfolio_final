@@ -4,7 +4,7 @@ import './header.css'
 const Header = () => {
   return (
     <nav className="">
-      <ul className="header bg-black text-white">
+      <ul className="header navbar sticky bg-black text-white">
 
         <li>
           <Link

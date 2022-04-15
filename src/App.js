@@ -12,6 +12,7 @@ import {animateScroll as scroll} from 'react-scroll'
 import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
 import {SiJavascript, SiReact, SiRedux, SiPython, SiDjango, SiJquery, SiExpress, SiMongodb, SiNodedotjs, SiGit, SiPostgresql, SiGithub, SiBootstrap, SiLinkedin, SiDiscord, SiSlack} from 'react-icons/si'
+import {GrPrevious, GrNext} from 'react-icons/gr'
 
 const App = () => {
 
@@ -30,7 +31,8 @@ const App = () => {
             <img src={headshot} className="headshot rounded-circle w-50 p-3 mh-100 my-2"></img>
           </div>
           <div className="bio-text container-sm">
-            <p className="text-white ">Hi, I'm Makayla! I am a software engineer, musician, and car enthusiast. Before graduating General Assembly's Software Engineering Immersive course, I worked as a ski lift operator and car mechanic. Both jobs were demanding of my focus and eye for detail. My love for solving technical problems has brought me to you!</p>              <p className="text-white">As a classical musician I am passionate about working as a team. After playing cello in a chamber orchestra, I learned that each musician has their own role. In order to be successful, you must demonstrate trust and listen to those around you. This way you can adjust your dynamics to ensure that all instruments blend as one.</p>
+            <p className="text-white ">Hi, I'm Makayla! I am a software engineer, musician, and car enthusiast. Before graduating General Assembly's Software Engineering Immersive course, I worked as a ski lift operator and car mechanic. Both jobs were demanding of my focus and eye for detail. My love for solving technical problems has brought me to you!</p>
+            <p className="text-white">As a classical musician I am passionate about working as a team. After playing cello in a chamber orchestra, I learned that each musician has their own role. In order to be successful, you must demonstrate trust and listen to those around you. This way you can adjust your dynamics to ensure that all instruments, or team members, blend as one.</p>
             <p className="text-white">Excited to connect with you!</p>
           </div>
         </div>
@@ -64,44 +66,66 @@ const App = () => {
         </div>
       </div>
 
-      <div id="carouselSlides" className="carousel slide container-sm" data-ride="carousel">
-        <div id="Projects" className="carousel-inner container-sm">
 
-            <div className="carousel-item active container-sm row justify-content-evenly">
+
+
+
+
+
+
+      <div id="Projects" className="projects my-5 container-sm  d-inline-flex">
+
+        <div id="carouselSlides" className="carousel slide my-5 container-sm " data-ride="carousel">
+          <div className="carousel-inner">
+
+            <div className="carousel-item active container-sm ">
               <h2 className="mt-3 mb-5"><a href="https://voluble-begonia-4ac205.netlify.app/" className="fs-2 text-white">Todo or not Todo</a></h2>
-              <img src={todo} className="d-block w-100 project-img"></img>
-                <div className="code-link mt-5 container-sm">
+              <div className="mx-4">
+                <img src={todo} className="project-img footer border border-black rounded d-block w-100"></img>
+              </div>
+
+                <div className="link mt-5 container-sm">
                   <a className="text-white fs-4" href="https://github.com/edwarmak/front_end_todo">View frontend code!</a>
                 </div>
-                <div className="code-link mt-2 container-sm">
-                  <a className="text-white fs-4 " href="https://github.com/edwarmak/backend_todo">View backend code!</a>
+
+                <div className="link mt-3 mb-5 container-sm">
+                  <a className="text-white fs-4" href="https://github.com/edwarmak/backend_todo">View backend code!</a>
                 </div>
             </div>
 
-            <div className="carousel-item container-sm row justify-content-evenly">
-              <h2 className="mt-3 mb-5"><a href="https://mystuff-security-app.netlify.app/" className="fs-2 text-white">MyStuffApp</a></h2>
-              <img src={mystuffapp} className="d-block w-100 mystuff-img"></img>
 
-              <div className="code-link mt-5 container-sm">
+            <div className="carousel-item container-sm ">
+              <h2 className="mt-3 mb-5"><a href="https://mystuff-security-app.netlify.app/" className="fs-2 text-white">MyStuffApp</a></h2>
+              <div className="mx-4">
+                <img src={mystuffapp} className="project-img footer border border-black rounded d-block w-100"></img>
+              </div>
+
+              <div className="link mt-5 container-sm">
                 <a className="text-white fs-4" href="https://github.com/kdutile/project_4-frontend">View frontend code!</a>
               </div>
-              <div className="code-link mt-2 container-sm">
+
+              <div className="link mt-3 mb-5 container-sm">
                 <a className="text-white fs-4" href="https://github.com/kdutile/project_4_backend">View backend code!</a>
               </div>
             </div>
 
+          </div>
+
+            <a className="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a className="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
         </div>
 
-        <a className="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </a>
-
       </div>
+
+
+
+
+
 
       <div id="Resources" className="container-sm d-inline-flex">
         <div className="container-sm col d-flex flex-column justify-content-center ">
