@@ -98,7 +98,10 @@
 @media (max-width: 414px) {
   .container-sm {
     padding-right: 0;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+  }
+  .carousel-inner {
+    padding-right: 1.5em;
   }
   .nav-footer {
     margin-left: 2em;
