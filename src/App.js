@@ -83,7 +83,7 @@ const App = () => {
             <div className="carousel-item active container-sm ">
               <h2 className="mt-3 mb-5"><a href="https://voluble-begonia-4ac205.netlify.app/" className="fs-2 text-white">Todo or not Todo</a></h2>
               <div className="mx-4">
-                <img src={todo} className="project-img footer border border-black rounded d-block w-100"></img>
+                <img src={todo} className="project-img glow border border-black rounded d-block w-100"></img>
               </div>
 
                 <div className="link mt-5 container-sm">
@@ -99,7 +99,7 @@ const App = () => {
             <div className="carousel-item container-sm ">
               <h2 className="mt-3 mb-5"><a href="https://mystuff-security-app.netlify.app/" className="fs-2 text-white">MyStuffApp</a></h2>
               <div className="mx-4">
-                <img src={mystuffapp} className="project-img footer border border-black rounded d-block w-100"></img>
+                <img src={mystuffapp} className="project-img glow border border-black rounded d-block w-100"></img>
               </div>
 
               <div className="link mt-5 container-sm">
