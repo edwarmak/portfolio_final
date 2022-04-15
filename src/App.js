@@ -80,7 +80,7 @@ const App = () => {
         <div id="carouselSlides" className="carousel slide my-5 container-sm " data-ride="carousel">
           <div className="carousel-inner">
 
-            <div className="carousel-item active container-sm ">
+            <div className="carousel-item active">
               <h2 className="mt-3 mb-5"><a href="https://voluble-begonia-4ac205.netlify.app/" className="fs-2 text-white">Todo or not Todo</a></h2>
               <div className="mx-4">
                 <img src={todo} className="project-img glow border border-black rounded d-block w-100"></img>
@@ -96,7 +96,7 @@ const App = () => {
             </div>
 
 
-            <div className="carousel-item container-sm ">
+            <div className="carousel-item">
               <h2 className="mt-3 mb-5"><a href="https://mystuff-security-app.netlify.app/" className="fs-2 text-white">MyStuffApp</a></h2>
               <div className="mx-4">
                 <img src={mystuffapp} className="project-img glow border border-black rounded d-block w-100"></img>
